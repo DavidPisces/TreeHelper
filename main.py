@@ -58,7 +58,7 @@ def login(usernum, userpasswd):
     request.urlretrieve(image_in, "in.png")
     # get instance
     get_instance = GetInstance.identify_gap("back.png", "in.png", "out.png")
-    print("[fuckzhihuishu.logd] instance:", get_instance)
+    print("[TreeHelper.logd] instance:", get_instance)
     # auth
     # 考虑到图片有透明边缘，设定偏移值为12
     slider = browser.find_element(By.CLASS_NAME, "yidun_slider")  # 实例化滑块
